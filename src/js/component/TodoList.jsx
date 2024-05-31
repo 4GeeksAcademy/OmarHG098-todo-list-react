@@ -39,7 +39,7 @@ const TodoList = () => {
         <ul className="list-group d-flex justify-content-around my-1">
           {tasksArray.map((task, id) => {
             return (
-              <li className="list-group-item d-flex justify-content-between px-3" key={`task-${id}`}>
+              <li className="list-group-item d-flex justify-content-between px-3 tarea" key={`task-${id}`}>
                 {task}
                 <button
                   type="button"
@@ -52,7 +52,7 @@ const TodoList = () => {
             );
           })}
           <div className="my-1" key={"items-left"}>
-            {tasksArray.length} items left
+            {tasksArray.length > 0 ? `${tasksArray.length} items left` : "No tasks left"} 
           </div>
         </ul>
       </div>

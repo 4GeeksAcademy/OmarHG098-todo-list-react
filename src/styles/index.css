@@ -10,10 +10,13 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
-/* 
-button.hide{
-    visibility: hidden;
+*{
+    background-color: rgb(240, 239, 234);
 }
-button.hide:hover{
-    visibility: visible;
-}  */
+.tarea .hide{
+    list-style: none;
+    display: none;
+}
+.tarea:hover .hide{
+    display: block;
+}  
